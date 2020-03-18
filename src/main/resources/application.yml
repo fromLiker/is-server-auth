@@ -1,0 +1,17 @@
+server:
+  port: 9090
+  servlet:
+    session:
+      timeout: 259200
+  
+spring:  
+  application:
+    name: auth-server
+    
+  #数据库连接配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://106.54.194.33:3306/authdb?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/authdb?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: admin
